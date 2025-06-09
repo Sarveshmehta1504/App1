@@ -8,7 +8,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();  
+  WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
     url: AppSecrets.supaBaseUrl,
     anonKey: AppSecrets.supaBaseAnonKey,
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Blog App',
       theme: AppTheme.darkThemeMode,
-      home: const HomePage(),
+      home: HomeScreen(),
     );
   }
 }
